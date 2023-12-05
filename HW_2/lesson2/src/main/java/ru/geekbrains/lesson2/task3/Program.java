@@ -38,6 +38,8 @@ public class Program {
 
         String updateQuery = queryBuilder.buildUpdateQuery(user);
         System.out.printf("Update Query: %s\n", updateQuery);
+
+
     }
 
 }

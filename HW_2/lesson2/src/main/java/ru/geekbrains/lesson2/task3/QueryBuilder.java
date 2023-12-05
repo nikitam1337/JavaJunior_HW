@@ -5,6 +5,7 @@ import java.util.UUID;
 
 public class QueryBuilder {
 
+
     public String buildInsertQuery(Object obj) throws IllegalAccessException {
         Class<?> clazz = obj.getClass();
         StringBuilder query = new StringBuilder("INSERT INTO ");
@@ -117,6 +118,8 @@ public class QueryBuilder {
 
     /**
      * TODO: Доработать в рамках домашней работы
+     * Доработайте метод генерации запроса на удаление объекта из таблицы БД (DELETE FROM <Table> WHERE ID = '<id>')
+     *
      * @param clazz
      * @param primaryKey
      * @return
