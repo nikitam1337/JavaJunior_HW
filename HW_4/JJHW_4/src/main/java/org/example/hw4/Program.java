@@ -20,7 +20,7 @@ public class Program {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        String url = "jdbc:mysql://localhost:3306/";
+        String url = "jdbc:mysql://localhost:3307";
         String user = "root";
         String password = "password";
 
