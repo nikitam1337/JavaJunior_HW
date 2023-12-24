@@ -14,7 +14,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Collection;
 
 public class Program {
     public static void main(String[] args) {
@@ -58,7 +57,7 @@ public class Program {
     }
 
     private static void createTable(Connection connection) throws SQLException {
-        String createTableSQL = "CREATE TABLE IF NOT EXISTS Courses (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), duration VARCHAR(255));";
+        String createTableSQL = "CREATE TABLE IF NOT EXISTS Courses (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), duration INT);";
         try (PreparedStatement statement = connection.prepareStatement(createTableSQL)) {
             statement.execute();
         }
