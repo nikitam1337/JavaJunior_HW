@@ -2,6 +2,7 @@ package org.example.models;
 
 
 import javax.persistence.*;
+import java.util.Iterator;
 
 @Entity
 @Table(name = "Courses")
@@ -30,12 +31,13 @@ public class Course {
         this.duration = duration;
     }
 
+
     @Override
     public String toString() {
         return "Course{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
-                ", duration=" + duration + "месяцев(-а)" +
+                ", Название ='" + title + '\'' +
+                ", Продолжительность =" + duration + "месяцев(-а)" +
                 '}';
     }
 

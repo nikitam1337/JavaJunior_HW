@@ -35,7 +35,7 @@ public class App {
             session.save(course);
             System.out.println("Object course save successfully");
 
-            // Создание объекта
+            // Закрытие сессии с сохранением
             session.getTransaction().commit();
 
         } catch (Exception e) {
