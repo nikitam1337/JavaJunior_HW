@@ -35,9 +35,9 @@ public class Course {
     @Override
     public String toString() {
         return "Course{" +
-                "id=" + id +
-                ", Название ='" + title + '\'' +
-                ", Продолжительность =" + duration + "месяцев(-а)" +
+                "id= " + id +
+                ", Название = '" + title + '\'' +
+                ", Продолжительность = " + duration + " месяцев(-а)" +
                 '}';
     }
 
